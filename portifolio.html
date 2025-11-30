@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boru Golicha- Mobile Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    body { font-family: 'Poppins', sans-serif; margin: 0; background: #f9f9f9; color: #333; }
+    header { padding: 60px; text-align: center; background: #3c4049; color: #fff; display:flex; flex-direction:column; align-items:center; gap:18px; }
+    .profile img { border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 4px solid rgba(255,255,255,0.06); box-shadow: 0 6px 18px rgba(0,0,0,0.25); }
+    .profile { display:flex; align-items:center; justify-content:center; position:relative; }
+    .profile-placeholder { display:none; width:150px; height:150px; border-radius:50%; align-items:center; justify-content:center; background: linear-gradient(135deg, rgba(74,85,104,1), rgba(60,64,73,1)); color:#fff; font-weight:600; font-size:44px; box-shadow: 0 6px 18px rgba(0,0,0,0.25); }
+    .header-text { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; }
+    @media (min-width: 768px) {
+        header { flex-direction: row; text-align: left; justify-content: center; gap: 40px; }
+        .header-text { align-items:flex-start; }
+        .profile { margin-right: 20px; }
+    }
+    section { padding: 50px 12%; }
+    h2 { color: #007bff; }
+    .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    footer { text-align: center; padding: 20px; background: #222; color: #fff; }
+</style>
+</head>
+<body>
+
+<header>
+    <!--
+        Image setup tips:
+        - Place `profile.png` next to this file in the project root (same folder as `portifolio.html`) or inside `assets/images`.
+        - If it's in the root: use `src="profile.png"` and optional `srcset="profile@2x.png 2x"`.
+        - Recommended image sizes: 600x600px (profile.png) and 1200x1200px (profile@2x.png) for high-DPI.
+        - For local preview only, absolute file URI is possible (NOT for deployed sites):
+          `file:///C:/Users/KANU/Desktop/Kanu/My%20code/My%20Portfolio/profile.png`
+    -->
+    <div class="profile">
+        <picture>
+            <source srcset="C:\Users\KANU\Desktop\Kanu\My code\My Portfolio\profile.png" type="image/webp/png">
+            <img id="profileImage" src="C:\Users\KANU\Desktop\Kanu\My code\My Portfolio\profile.png" srcset="profile@2x.png 2x" alt="Boru Golicha - Profile Photo" loading="lazy" decoding="async" fetchpriority="low" onerror="this.style.display='none';document.getElementById('profilePlaceholder').style.display='flex'" onload="document.getElementById('profilePlaceholder').style.display='none'">
+        </picture>
+        <div id="profilePlaceholder" class="profile-placeholder" role="img" aria-label="Profile placeholder">BG</div>
+    </div>
+    <div class="header-text">
+        <h1>Boru Golicha</h1>
+        <p>Mobile App Developer (Android + Flutter)</p>
+        <p>
+            <a href="https://github.com/kanu5858" style="color:#fff;">GitHub</a> |
+            <a href="https://linkedin.com/in/boru5858" style="color:#fff;">LinkedIn</a>
+        </p>
+    </div>
+</header>
+
+<script>
+    // Small diagnostic helper to make it easier to debug when the profile image doesn't load.
+    (function() {
+        const image = document.getElementById('profileImage');
+        const placeholder = document.getElementById('profilePlaceholder');
+        if (!image) return;
+
+        // if the image can't be found, show placeholder and print console info
+        image.onerror = function() {
+            console.warn('Profile image failed to load from:', image.src);
+            image.style.display = 'none';
+            if (placeholder) placeholder.style.display = 'flex';
+        };
+        // if it loads, hide placeholder
+        image.onload = function() {
+            if (placeholder) placeholder.style.display = 'none';
+            image.style.display = 'block';
+        };
+    })();
+</script>
+
+<section>
+    <h2>About Me</h2>
+    <p>I am a mobile developer specializing in Android (Kotlin + Jetpack Compose) and Flutter (Dart). I build clean, fast and modern apps with strong architecture and beautiful UI.</p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <ul>
+        <li>Kotlin, Jetpack Compose, MVVM</li>
+        <li>Flutter, Dart, Provider, Riverpod</li>
+        <li>REST APIs, Firebase (Auth, Firestore, Storage)</li>
+        <li>Git, GitHub, Postman</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Chat App</h3>
+            <p>Android app with Firebase real-time messaging, Jetpack Compose UI.</p>
+            <button class="github-btn">GitHub</button>
+
+<style>
+.github-btn {
+  cursor: pointer;
+  padding: 10px 18px;
+  background: #24292e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.github-btn:hover {
+  background: #2f363d;
+  transform: scale(1.07);
+}
+</style>
+
+<script>
+document.querySelectorAll(".github-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    window.open(btn.dataset.link, "_blank");
+  });
+});
+</script>
+
+
+        </div>
+        <div class="card">
+            <h3>Weather App</h3>
+            <p>Flutter app using OpenWeather API, responsive UI, dark mode.</p>
+           <a href="https://github.com/yourusername/weather-app">GitHub</a>
+        </div>
+        <div class="card">
+            <h3>E-commerce App</h3>
+            <p>Full Flutter e-commerce with cart and checkout screens.</p>
+            <a href="https://github.com/yourusername/ecommerce-app">GitHub</a>
+        </div>
+        <div class="card">
+            <h3>Notes App</h3>
+            <p>Kotlin + Room database, CRUD operations, Material 3 UI.</p>
+            <a href="https://github.com/yourusername/notes-app">GitHub</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: borugolicha0@gmail.com</p>
+    <p>Phone: +251 982911258</p>
+    <p>Telegram: kanu5858</p>
+</section>
+
+<footer>
+    <p>© 2025 Boru Golicha - Mobile AppDeveloper</p>
+</footer>
+
+</body>
+</html>
