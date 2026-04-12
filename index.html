@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boru Golicha - Creative Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon theme-icon"></i>
+    </button>
+
+    <nav class="nav-container">
+        <div class="nav-content">
+            <a href="#hero" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Dev Skills</a>
+            <a href="#creative-skills" class="nav-link">Creative Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-background">
+                <div class="cover-image"></div>
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="profile-container">
+                    <div class="profile-image-wrapper">
+                        <img src="profile.png" alt="Boru Golicha" class="profile-image">
+                        <div class="profile-border"></div>
+                    </div>
+                </div>
+                <h1 class="hero-title">
+                    <span class="name">Boru Golicha</span>
+                    <span class="title">Creative Software Developer</span>
+                </h1>
+                <p class="hero-tagline">
+                    <span id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://www.tiktok.com/@kanutechome" class="social-link" target="_blank" rel="noopener" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@kanutechome" class="social-link" target="_blank" rel="noopener" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://facebook.com/@kanutechome" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/kanu5858" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/kanu5858" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/boru5858" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-grid">
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                    <div class="code-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            I'm a passionate mobile developer who believes in the intersection of clean code and beautiful experiences. My journey began with Android development and evolved into a holistic approach to creative problem-solving.
+                        </p>
+                        <p>
+                            I specialize in crafting modern mobile applications using Kotlin and Jetpack Compose, with a deep appreciation for architecture patterns that scale. But beyond the code, I'm fascinated by the art of user experience and the psychology of intuitive design.
+                        </p>
+                        <p>
+                            My philosophy is simple: write code that humans can read, build interfaces that feel natural, and never stop learning. Every project is an opportunity to push boundaries and create something meaningful.
+                        </p>
+                        <p>
+                            I bring pixels to life through code, shape them through design, and give them rhythm through video.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projects Built</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Coffee Powered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Mobile Development</h3>
+                        <div class="skill-chips">
+                            <span class="skill-chip">Kotlin</span>
+                            <span class="skill-chip">Jetpack Compose</span>
+                            <span class="skill-chip">MVVM</span>
+                            <span class="skill-chip">Room Database</span>
+                            <span class="skill-chip">Coroutines</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend & APIs</h3>
+                        <div class="skill-chips">
+                            <span class="skill-chip">REST APIs</span>
+                            <span class="skill-chip">Firebase</span>
+                            <span class="skill-chip">Authentication</span>
+                            <span class="skill-chip">Firestore</span>
+                            <span class="skill-chip">Cloud Storage</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Workflow</h3>
+                        <div class="skill-chips">
+                            <span class="skill-chip">Git</span>
+                            <span class="skill-chip">GitHub</span>
+                            <span class="skill-chip">Postman</span>
+                            <span class="skill-chip">Android Studio</span>
+                            <span class="skill-chip">VS Code</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-lightbulb"></i> Core Skills</h3>
+                        <div class="skill-chips">
+                            <span class="skill-chip"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+        </section>
+
+        <section id="creative-skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Creative Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category creative-category">
+                        <h3><i class="fas fa-palette"></i> Graphics Design</h3>
+                        <div class="skill-chips">
+                            <span class="skill-chip"><i class="fab fa-adobe"></i> Photoshop</span>
+                            <span class="skill-chip"><i class="fab fa-figma"></i> Figma</span>
+                        </div>
+                    </div>
+                    <div class="skill-category creative-category">
+                        <h3><i class="fas fa-video"></i> Video Editing</h3>
+                        <div class="skill-chips">
+                            <span class="skill-chip"><i class="fas fa-video"></i> CapCut</span>
+                            <span class="skill-chip"><i class="fab fa-adobe"></i> Premiere Pro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>Authentication App</h3>
+                            <span class="project-tech">Kotlin + Compose</span>
+                        </div>
+                        <p>Modern authentication system with biometric support and secure token management using Jetpack Compose.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/kanu5858/Android-Auth-App.git" class="project-link" target="_blank" rel="noopener">
+                                <span>View Code</span>
+                                <span>external</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>Weather App</h3>
+                            <span class="project-tech">Flutter</span>
+                        </div>
+                        <p>Beautiful weather application with real-time data, location services, and elegant dark mode transitions.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/kanu5858/weather-app" class="project-link" target="_blank" rel="noopener">
+                                <span>View Code</span>
+                                <span>external</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>E-commerce App</h3>
+                            <span class="project-tech">Flutter + Firebase</span>
+                        </div>
+                        <p>Full-featured e-commerce platform with cart management, payment integration, and real-time inventory.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/kanu5858/ecommerce-app" class="project-link" target="_blank" rel="noopener">
+                                <span>View Code</span>
+                                <span>external</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-header">
+                            <h3>Notes App</h3>
+                            <span class="project-tech">Kotlin + Room</span>
+                        </div>
+                        <p>Clean and intuitive note-taking app with local storage, search functionality, and Material 3 design.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/kanu5858/notes-app" class="project-link" target="_blank" rel="noopener">
+                                <span>View Code</span>
+                                <span>external</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="contact-content">
+                    <p class="contact-intro">
+                        I'm always excited to collaborate on interesting projects and meet fellow developers. 
+                        Whether you have a question, want to work together, or just want to say hello - feel free to reach out!
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:borugolicha0@gmail.com" class="contact-link">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span class="contact-text">borugolicha0@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/kanu5858" class="contact-link" target="_blank" rel="noopener">
+                            <i class="fab fa-github contact-icon"></i>
+                            <span class="contact-text">github.com/kanu5858</span>
+                        </a>
+                        <a href="https://linkedin.com/in/boru5858" class="contact-link" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin contact-icon"></i>
+                            <span class="contact-text">linkedin.com/in/boru5858</span>
+                        </a>
+                        <a href="https://t.me/kanu5858" class="contact-link" target="_blank" rel="noopener">
+                            <i class="fab fa-telegram contact-icon"></i>
+                            <span class="contact-text">@kanu5858</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Boru Golicha. Crafted with passion and lots of coffee.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
