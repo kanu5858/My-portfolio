@@ -118,39 +118,39 @@ function initScrollReveal() {
 }
 
 // ===== CURSOR GLOW =====
-function initCursorGlow() {
-    const cursor = document.querySelector('.cursor-glow');
-    let mouseX = 0;
-    let mouseY = 0;
-    let cursorX = 0;
-    let cursorY = 0;
+// function initCursorGlow() {
+//     const cursor = document.querySelector('.cursor-glow');
+//     let mouseX = 0;
+//     let mouseY = 0;
+//     let cursorX = 0;
+//     let cursorY = 0;
     
-    document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-        cursor.style.opacity = '1';
-    });
+//     document.addEventListener('mousemove', (e) => {
+//         mouseX = e.clientX;
+//         mouseY = e.clientY;
+//         cursor.style.opacity = '1';
+//     });
     
-    document.addEventListener('mouseleave', () => {
-        cursor.style.opacity = '0';
-    });
+//     document.addEventListener('mouseleave', () => {
+//         cursor.style.opacity = '0';
+//     });
     
-    // Smooth cursor following
-    function animateCursor() {
-        const dx = mouseX - cursorX;
-        const dy = mouseY - cursorY;
+//     // Smooth cursor following
+//     function animateCursor() {
+//         const dx = mouseX - cursorX;
+//         const dy = mouseY - cursorY;
         
-        cursorX += dx * 0.1;
-        cursorY += dy * 0.1;
+//         cursorX += dx * 0.1;
+//         cursorY += dy * 0.1;
         
-        cursor.style.left = cursorX + 'px';
-        cursor.style.top = cursorY + 'px';
+//         cursor.style.left = cursorX + 'px';
+//         cursor.style.top = cursorY + 'px';
         
-        requestAnimationFrame(animateCursor);
-    }
+//         requestAnimationFrame(animateCursor);
+//     }
     
-    animateCursor();
-}
+//     animateCursor();
+// }
 
 // ===== SMOOTH SCROLLING =====
 function initSmoothScrolling() {
